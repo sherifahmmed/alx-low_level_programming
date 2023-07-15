@@ -8,22 +8,19 @@
 
 int main(void)
 {
-	int i = '0';
-	int j = '0';
+	int i = 0;
+	int j;
 
-	while (i <= '9')
+	while (i <= 9)
 	{
-		while (j <= '9')
+		j = 0;
+		while (j <= 9)
 		{
-			if (!(i > j) || i == j)
+			if (i != j && i < j)
 			{
-				putchar(i);
-				putchar(j);
-				if (i == '8' && j == '9')
-				{
-					putchar('\n');
-				}
-				else
+				putchar(i + 48);
+				putchar(j + 48);
+				if (i + j != 17)
 				{
 					putchar(',');
 					putchar(' ');
@@ -31,8 +28,8 @@ int main(void)
 			}
 			j++;
 		}
-		j = '0';
 		i++;
 	}
-return (0);
+	putchar('\n');
+	return (0);
 }
