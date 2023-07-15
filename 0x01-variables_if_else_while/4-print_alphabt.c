@@ -6,21 +6,22 @@
  * Return: Always 0 (success)
  */
 
-int main (void)
+int main(void)
 {
-        int loweCase = 'a';
-        while (lowerCase <= 'z')
-        {
+	int loweCase = 'a';
+
+	while (lowerCase <= 'z')
+	{
 		if (lowerCase == 'e' || lowerCase == 'q')
 		{
 			lowerCase += 1;
 		}
 		else
 		{
-                putchar(lowrCase);
+		putchar(lowrCase);
                 lowerCase += 1;
 		}
-        }
-        putchar('\n');
+	}
+	putchar('\n');
         return (0);
 }
