@@ -18,7 +18,7 @@ int main(void)
 		}
 		else
 		{
-		putchar(lowrCase);
+		putchar(lowerCase);
                 lowerCase += 1;
 		}
 	}
