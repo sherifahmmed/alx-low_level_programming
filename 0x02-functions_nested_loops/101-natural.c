@@ -3,9 +3,9 @@
 /**
  * main - Entry point
  *
- * @n: computes the sum of all
- *	the multiples of 3 or 5
- *	below 1024 (excluded)
+ * Descriptionn: computes the sum of all
+ *	         the multiples of 3 or 5
+ *	         below 1024 (excluded)
  *
  * Return: Always 0 (Success)
 */
