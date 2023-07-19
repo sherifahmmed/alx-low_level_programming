@@ -1,11 +1,12 @@
 #include "main.h"
 
 /**
- * main - Entry point
+ * _isalpha - checks if character is a letter
+ * both lowercase or uppercase
  *
- * Description: Prints _putchar using putchar prototype
+ * @n: takes input from other function
  *
- * Return: Always 0 (sucess)
+ * Return: 1 is c if true else 0
 */
 
 int _isalpha(int c)
