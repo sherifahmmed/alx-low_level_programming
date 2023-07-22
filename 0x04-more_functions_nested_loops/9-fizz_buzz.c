@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * main - prints a fizz bizz program
+ * main - Prints a Fizz Buzz program
  * Return: Always 0 (success)
 */
 
@@ -10,7 +10,7 @@ int main(void)
 {
 	int x;
 
-	for (x = 1; x <= 108; x++)
+	for (x = 1; x <= 100; x++)
 	{
 		if ((x % 3 == 0) && (x % 5 == 0))
 		{
