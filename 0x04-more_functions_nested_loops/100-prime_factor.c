@@ -19,7 +19,7 @@ int main(void)
 			maxf = number / x;
 		}
 	}
-	printf("%d", maxf);
+	printf("%ld", maxf);
 
 	return (0);
 }
