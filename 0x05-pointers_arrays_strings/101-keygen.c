@@ -8,7 +8,7 @@
  * Return: Always 0 (sucesss)
 */
 
-nt main(void)
+int main(void)
 {
 	char password[84];
 	int index = 0, sum = 0, diff_half1, diff_half2;
