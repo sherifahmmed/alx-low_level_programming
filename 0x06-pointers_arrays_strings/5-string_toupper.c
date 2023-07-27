@@ -2,7 +2,7 @@
 
 /**
  * string_toupper - Change all lowercase letters
- * of a string to uppercase. 
+ * of a string to uppercase.
  *
  * @str: The string to be changed
  *
