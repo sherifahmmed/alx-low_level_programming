@@ -12,7 +12,7 @@ int main(void)
 
 	for (i = 48; i <= 57; i++)
 	{
-		for (j = 0; j <= 9 j++)
+		for (j = 0; j <= 9; j++)
 		{
 			if (i != j && i < j)
 			{
