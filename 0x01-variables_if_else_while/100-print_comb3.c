@@ -12,7 +12,7 @@ int main(void)
 
 	for (i = 48; i <= 57; i++)
 	{
-		for (j = 0; j <= 9; j++)
+		for (j = 49; j <= 57; j++)
 		{
 			if (i != j && i < j)
 			{
@@ -23,7 +23,7 @@ int main(void)
 				putchar(',');
 				putchar(' ');
 				}
-			}	
+			}
 		}
 	}
 	putchar('\n');
