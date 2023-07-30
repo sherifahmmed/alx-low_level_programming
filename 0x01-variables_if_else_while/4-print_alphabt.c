@@ -2,25 +2,18 @@
 
 /**
  * main - Entry point
- *
- * Return: Always 0 (success)
- */
+ * description: prints the alphabet in lowercase except q and e.
+ * Return: 0.
+*/
 
 int main(void)
 {
-	int lowerCase = 'a';
+	int i;
 
-	while (lowerCase <= 'z')
+	for (i = 97; i <= 122; i++)
 	{
-		if (lowerCase == 'e' || lowerCase == 'q')
-		{
-			lowerCase += 1;
-		}
-		else
-		{
-		putchar(lowerCase);
-		lowerCase += 1;
-		}
+		if (i != 101 && i != 113)
+			putchar(i);
 	}
 	putchar('\n');
 	return (0);

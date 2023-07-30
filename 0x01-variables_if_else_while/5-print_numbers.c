@@ -2,19 +2,17 @@
 
 /**
  * main - Entry point
- *
- * Return: Always 0 (success)
- */
+ * Description: prints all single digit numbers of base 10 starting from 0.
+ * Return: 0.
+*/
 
 int main(void)
 {
-	int num;
+	int i;
 
-	while (num < 10)
-	{
-		printf("%d", num);
-		num += 1;
-	}
-	printf("\n");
+	for (i = 48; i <= 57; i++)
+		putchar(i);
+
+	putchar('\n');
 	return (0);
 }

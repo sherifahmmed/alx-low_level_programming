@@ -2,18 +2,17 @@
 
 /**
  * main - Entry point
- *
- * Return: Always 0 (success)
- */
+ * Description: prints all single digit numbers of base 10 starting from 0.
+ * Return: 0.
+*/
 
 int main(void)
 {
-	int num;
+	int i;
 
-	for (num = 0; num < 10; num++)
-		putchar((num % 10) + '0');
+	for (i = 48; i <= 57; i++)
+		putchar(i);
 
 	putchar('\n');
-
 	return (0);
 }

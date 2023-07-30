@@ -1,34 +1,30 @@
 #include <stdio.h>
 
 /**
- * main - function to print combination of two numbers
- *
- * Return: 0 on success
- */
+ * main - Entry point
+ * Description: prints all possible different combinations of two digits.
+ * Return: 0.
+*/
 
 int main(void)
 {
-	int i = 0;
-	int j;
+	int i, j;
 
-	while (i <= 9)
+	for (i = 48; i <= 57; i++)
 	{
-		j = 0;
-		while (j <= 9)
+		for (j = 49; j <= 57; j++)
 		{
 			if (i != j && i < j)
 			{
-				putchar(i + 48);
-				putchar(j + 48);
-				if (i + j != 17)
+				putchar(i);
+				putchar(j);
+				if (i != 56)
 				{
-					putchar(',');
-					putchar(' ');
+				putchar(',');
+				putchar(' ');
 				}
 			}
-			j++;
 		}
-		i++;
 	}
 	putchar('\n');
 	return (0);

@@ -2,17 +2,18 @@
 
 /**
  * main - Entry point
- *
- * Return: Always 0 (success)
- */
+ * Description: prints the lowercase alphabet in reverse.
+ * Return: 0.
+*/
 
 int main(void)
 {
-	char letter;
+	int i;
 
-	for (letter = 'z'; letter >= 'a'; letter--)
-		putchar(letter);
-
+	for (i = 122; i >= 97; i--)
+	{
+		putchar(i);
+	}
 	putchar('\n');
 	return (0);
 }

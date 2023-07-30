@@ -2,25 +2,20 @@
 
 /**
  * main - Entry point
- *
- * Return: Always 0 (success)
- */
+ * Description: prints the alphabet in lowercase and then in uppercase.
+ * Return: 0.
+*/
 
 int main(void)
 {
-	int lowerCase = 'a';
-	int upperCase = 'A';
+	int i, j;
 
-	while (lowerCase <= 'z')
-	{
-		putchar(lowerCase);
-		lowerCase += 1;
-	}
-	while (upperCase <= 'Z')
-	{
-		putchar(upperCase);
-		upperCase += 1;
-	}
+	for (i = 97; i <= 122; i++)
+		putchar(i);
+
+	for (j = 65; j <= 90; j++)
+		putchar(j);
+
 	putchar('\n');
 	return (0);
 }
