@@ -2,7 +2,7 @@
 
 /**
  * main - Entry point
- * Description: prints all single digit numbers of base 10 starting from 0.
+ * Description: prints all the numbers of base 16 in lowercase.
  * Return: 0.
 */
 
@@ -13,7 +13,7 @@ int main(void)
 	for (i = 48; i <= 57; i++)
 		putchar(i);
 
-	for (j = 97; j <= 102; i++)
+	for (j = 97; j <= 102; j++)
 		putchar(j);
 
 	putchar('\n');
