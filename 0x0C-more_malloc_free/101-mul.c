@@ -61,7 +61,7 @@ void print_int(unsigned long int n)
 	for (; divisor >= 1; n %= divisor, divisor /= 10)
 	{
 		resp = n / divisor;
-		_puthchar('0' + resp);
+		_putchar('0' + resp);
 	}
 }
 
