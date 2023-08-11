@@ -69,7 +69,7 @@ void print_int(unsigned long int n)
  * main - print the result of the multiplication, followed by a new line
  * @argc: int
  * @argv: list
- * return: 0
+ * Return: 0
  */
 
 int main(int argc, char const *argv[])
