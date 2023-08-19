@@ -11,9 +11,9 @@ char *cap_string(char *str)
 {
 	int index = 0;
 
-	while (str[index])
+	while (str[index] != '\0')
 	{
-		while (!(str[index] >= 'a' && str[index] <= 'z'))
+		while (str[index] >= 'A' && str[index] <= 'Z')
 			index++;
 		if (str[index - 1] == ' ' ||
 		str[index - 1] == '\t' ||
