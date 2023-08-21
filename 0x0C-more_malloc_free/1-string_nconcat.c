@@ -39,10 +39,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		if (index < len1)
 			concat[index] = s1[index];
 		else
-			concate[index] = s2[index - len1];
+			concat[index] = s2[index - len1];
 	}
 
-	concate[index] = '\0';
+	concat[index] = '\0';
 
 	return (concat);
 }
