@@ -2,6 +2,22 @@
 #include <string.h>
 
 /**
+ * _strcpy - copy string from src into dest
+ * @dest: input
+ * @src: input
+ * Return: dest
+ */
+
+char *_strcpy(char *dest, char *src)
+{
+	int i;
+
+	for (i = 0; src[i] != '\0'; i++)
+		dest[i] = src[i];
+	return (dest);
+}
+
+/**
  * new_dog - creates a new dog
  * @name: name member of the dog
  * @age: age member of the dog
@@ -11,28 +27,35 @@
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	char *temp_name;
-	char *temp_owner;
-	dog_t *new_doggo;
+	dog_t *new_dog;
+	int len1 = 0, len2 = 0;
 
-	temp_name = malloc(sizeof(*name) * (strlen(name) + 1));
-	temp_owner = malloc(sizeof(*owner) * (strlen(owner) + 1));
-	new_doggo = malloc(sizeof(dog_t));
+	while (name[len1] != '\0')
+		len1++;
+	while (owner[len2] != '\0')
+		len2++;
 
-	if (temp_name && temp_owner && new_doggo)
+	new_dog = malloc(sizeof(dog_t));
+	new_dog->name = malloc(sizeof(char) * (len1 + 1));
+	new_dog->owner = malloc(sizeof(char) * (len2 + 1));
+
+	if (new_dog == NULL)
+		return (NULL);
+	if (new_dog->name == NULL)
 	{
-		strcpy(temp_name, name);
-		strcpy(temp_owner, owner);
-		new_doggo->name = temp_name;
-		new_doggo->age = age;
-		new_doggo->owner = temp_owner;
-	}
-	else
-	{
-		free(temp_name);
-		free(temp_owner);
-		free(new_doggo);
+		free(new_dog);
 		return (NULL);
 	}
-	return (new_doggo);
+	if (new_dog->owner == NULL)
+	{
+		free(new_dog->name);
+		free(new_dog);
+		return (NULL);
+	}
+
+	(*new_dog).name = _strcpy(new_dog->name, name);
+	(*new_dog).age = age;
+	(*new_dog).owner = _strcpy(new_dog->owner, owner);
+
+	return (new_dog);
 }
