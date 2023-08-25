@@ -42,4 +42,5 @@ int _strlen(const char *str)
 	while (str[i] != '\0')
 		i++;
 	return (i);
+}
 
